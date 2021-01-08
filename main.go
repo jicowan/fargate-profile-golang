@@ -20,7 +20,7 @@ type profile struct {
 func main() {
 	fp := flag.String("FargateProfileName", "GoProfile", "")
 	cluster := flag.String("ClusterName", "riverrun", "")
-	arn := flag.String("RoleArn", "arn:aws:iam::820537372947:role/AmazonEKSFargatePodExecutionRole", "")
+	arn := flag.String("RoleArn", "arn:aws:iam::123456789012:role/AmazonEKSFargatePodExecutionRole", "")
 
 	sess := session.Must(session.NewSession(&aws.Config{Region: aws.String(endpoints.UsEast2RegionID)}))
 	p := profile{
